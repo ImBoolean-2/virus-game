@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://4vuh6aejjutf"]
+
+[ext_resource type="Texture2D" uid="uid://doscd4ackdcnb" path="res://assets/backgrounds/game_board.svg" id="1_r677g"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="tablero" type="Sprite2D" parent="."]
+position = Vector2(575.25, 324.125)
+scale = Vector2(0.600781, 0.597917)
+texture = ExtResource("1_r677g")
+
+[node name="Label" type="Label" parent="tablero"]
+auto_translate_mode = 1
+offset_left = -783.0
+offset_top = -470.0
+offset_right = -730.0
+offset_bottom = -430.0
+text = "Host: "
+
+[node name="Label" type="Label" parent="tablero/Label"]
+offset_left = 678.0
+offset_top = 2.0
+offset_right = 723.0
+offset_bottom = 25.0
+text = "Music"
+
+[node name="card" type="Sprite2D" parent="."]
