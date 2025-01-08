@@ -1,3 +1,27 @@
-[gd_scene format=3 uid="uid://b0oc2xf1jsp05"]
+[gd_scene load_steps=2 format=3 uid="uid://b0oc2xf1jsp05"]
 
-[node name="PlayerHand" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://doscd4ackdcnb" path="res://assets/backgrounds/game_board.svg" id="1_vqlsn"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(579.5, 322)
+scale = Vector2(0.596354, 0.601852)
+texture = ExtResource("1_vqlsn")
+
+[node name="CenterContainer" type="CenterContainer" parent="Sprite2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sprite2D/CenterContainer"]
+layout_mode = 2
+
+[node name="Host" type="Button" parent="Sprite2D/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Host a party"
+
+[node name="Connect" type="Button" parent="Sprite2D/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Join to LAN"

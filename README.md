@@ -6,36 +6,36 @@ Este proyecto es un juego peer-to-peer desarrollado con Godot Engine. A continua
 
 ```mermaid
 graph TD
-    A[Root] --> B[scenes]
-    A --> C[scripts]
-    A --> D[assets]
-    A --> E[config]
-    A --> F[.gitignore]
-    A --> G[README.md]
-    A --> H[LICENSE]
-    A --> I[project.godot]
-    B --> B1[main.tscn]
-    B --> B2[game.tscn]
-    B --> B3[connection.tscn]
-    B --> B4[card_deck.tscn]
-    B --> B5[game_board.tscn]
-    B --> B6[player_hand.tscn]
-    C --> C1[game.gd]
-    C --> C2[player.gd]
-    C --> C3[virus.gd]
-    C --> C4[card.gd]
-    C --> C5[medicine.gd]
-    C --> C6[organ.gd]
-    C --> C7[treatment.gd]
-    D --> D1[sprites]
-    D --> D2[sounds]
-    D --> D3[fonts]
-    D1 --> D1a[player.png]
-    D1 --> D1b[virus.png]
-    D2 --> D2a[infect.wav]
-    E --> E1[game_config.json]
-    E --> E2[card_data.json]
-    E --> E3[player_info.json]
+	A[Root] --> B[scenes]
+	A --> C[scripts]
+	A --> D[assets]
+	A --> E[config]
+	A --> F[.gitignore]
+	A --> G[README.md]
+	A --> H[LICENSE]
+	A --> I[project.godot]
+	B --> B1[main.tscn]
+	B --> B2[game.tscn]
+	B --> B3[connection.tscn]
+	B --> B4[card_deck.tscn]
+	B --> B5[game_board.tscn]
+	B --> B6[player_hand.tscn]
+	C --> C1[game.gd]
+	C --> C2[player.gd]
+	C --> C3[virus.gd]
+	C --> C4[card.gd]
+	C --> C5[medicine.gd]
+	C --> C6[organ.gd]
+	C --> C7[treatment.gd]
+	D --> D1[sprites]
+	D --> D2[sounds]
+	D --> D3[fonts]
+	D1 --> D1a[player.png]
+	D1 --> D1b[virus.png]
+	D2 --> D2a[infect.wav]
+	E --> E1[game_config.json]
+	E --> E2[card_data.json]
+	E --> E3[player_info.json]
 ```
 
 ## Explicación de la Estructura
@@ -51,7 +51,7 @@ Contiene todas las escenas del juego. Cada escena es un archivo `.tscn` que defi
 
 ### scripts
 Aquí se almacenan todos los scripts de Godot, escritos en GDScript. Cada script se asocia a un nodo y define su comportamiento.
-- **game.gd:** Lógica principal del juego.
+- **gameboard.gd:** Lógica principal del juego.
 - **player.gd:** Comportamiento del jugador.
 - **virus.gd:** Comportamiento del virus.
 - **card.gd:** Lógica de las cartas.
@@ -90,20 +90,20 @@ Archivo de configuración del proyecto de Godot.
 
 ```mermaid
 sequenceDiagram
-    participant Player1
-    participant Player2
-    participant Server
+	participant Player1
+	participant Player2
+	participant Server
 
-    Player1->>Server: Solicitud de conexión
-    Server-->>Player1: Confirmación de conexión
-    Player2->>Server: Solicitud de conexión
-    Server-->>Player2: Confirmación de conexión
-    Player1->>Player2: Sincronización de estado del juego
-    Player2->>Player1: Confirmación de sincronización
-    Player1->>Server: Enviar acción de juego
-    Server-->>Player2: Actualizar estado del juego
-    Player2->>Server: Enviar acción de juego
-    Server-->>Player1: Actualizar estado del juego
+	Player1->>Server: Solicitud de conexión
+	Server-->>Player1: Confirmación de conexión
+	Player2->>Server: Solicitud de conexión
+	Server-->>Player2: Confirmación de conexión
+	Player1->>Player2: Sincronización de estado del juego
+	Player2->>Player1: Confirmación de sincronización
+	Player1->>Server: Enviar acción de juego
+	Server-->>Player2: Actualizar estado del juego
+	Player2->>Server: Enviar acción de juego
+	Server-->>Player1: Actualizar estado del juego
 ```
 
 Este flujo de datos muestra cómo los jugadores se conectan al servidor, sincronizan el estado del juego y envían acciones de juego entre sí a través del servidor.
