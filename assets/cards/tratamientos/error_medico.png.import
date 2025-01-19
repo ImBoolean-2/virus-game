@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7kila4nnkcr5"
-path="res://.godot/imported/celula_madre.png-c6b8cb7b4b484df9cac88bb7d3e7474b.ctex"
+uid="uid://ch0fliv7udyjp"
+path="res://.godot/imported/error_medico.png-b4fdf304c680b0d4d1ae70e1ad20bac1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cards/comodins/celula_madre.png"
-dest_files=["res://.godot/imported/celula_madre.png-c6b8cb7b4b484df9cac88bb7d3e7474b.ctex"]
+source_file="res://assets/cards/tratamientos/error_medico.png"
+dest_files=["res://.godot/imported/error_medico.png-b4fdf304c680b0d4d1ae70e1ad20bac1.ctex"]
 
 [params]
 

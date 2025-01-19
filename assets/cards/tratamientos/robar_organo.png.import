@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpyvbnq2r58ct"
-path="res://.godot/imported/robar_organo.png-26db38015244b97c0a8ff1122e5dca11.ctex"
+path="res://.godot/imported/robar_organo.png-68dfd1458002a8ee295420b06e4f9df8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cards/comodins/robar_organo.png"
-dest_files=["res://.godot/imported/robar_organo.png-26db38015244b97c0a8ff1122e5dca11.ctex"]
+source_file="res://assets/cards/tratamientos/robar_organo.png"
+dest_files=["res://.godot/imported/robar_organo.png-68dfd1458002a8ee295420b06e4f9df8.ctex"]
 
 [params]
 

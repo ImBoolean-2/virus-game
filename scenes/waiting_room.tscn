@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7cdboaub1mw0"]
+
+[ext_resource type="Script" path="res://scripts/waiting_room.gd" id="1_jqovy"]
+[ext_resource type="Texture2D" uid="uid://doscd4ackdcnb" path="res://assets/backgrounds/game_board.svg" id="1_vidy3"]
+
+[node name="waiting_room" type="Node2D"]
+script = ExtResource("1_jqovy")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(576.25, 324.5)
+scale = Vector2(0.599739, 0.599074)
+texture = ExtResource("1_vidy3")
+
+[node name="PlayerList" type="VBoxContainer" parent="Background"]
+anchors_preset = -1
+anchor_left = 0.501
+anchor_top = 0.402
+anchor_right = 0.888
+anchor_bottom = 0.644
+offset_left = -960.67
+offset_top = -540.157
+offset_right = -959.71
+offset_bottom = -539.517
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Player1" type="HBoxContainer" parent="Background/PlayerList"]
+layout_mode = 2
+
+[node name="PlayerPhoto" type="TextureRect" parent="Background/PlayerList/Player1"]
+layout_mode = 2
+
+[node name="PlayerName" type="Label" parent="Background/PlayerList/Player1"]
+layout_mode = 2
+
+[node name="Player2" type="HBoxContainer" parent="Background/PlayerList"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayerPhoto" type="TextureRect" parent="Background/PlayerList/Player2"]
+layout_mode = 2
+
+[node name="PlayerName" type="Label" parent="Background/PlayerList/Player2"]
+layout_mode = 2
+
+[node name="Player3" type="HBoxContainer" parent="Background/PlayerList"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayerPhoto" type="TextureRect" parent="Background/PlayerList/Player3"]
+layout_mode = 2
+
+[node name="PlayerName" type="Label" parent="Background/PlayerList/Player3"]
+layout_mode = 2
+
+[node name="Player4" type="HBoxContainer" parent="Background/PlayerList"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayerPhoto" type="TextureRect" parent="Background/PlayerList/Player4"]
+layout_mode = 2
+
+[node name="PlayerName" type="Label" parent="Background/PlayerList/Player4"]
+layout_mode = 2
+
+[node name="Player5" type="HBoxContainer" parent="Background/PlayerList"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayerPhoto" type="TextureRect" parent="Background/PlayerList/Player5"]
+layout_mode = 2
+
+[node name="PlayerName" type="Label" parent="Background/PlayerList/Player5"]
+layout_mode = 2
+
+[node name="Player6" type="HBoxContainer" parent="Background/PlayerList"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayerPhoto" type="TextureRect" parent="Background/PlayerList/Player6"]
+layout_mode = 2
+
+[node name="PlayerName" type="Label" parent="Background/PlayerList/Player6"]
+layout_mode = 2

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxhhtte5i2wcu"
-path="res://.godot/imported/contagio.png-f074da323557fb64ceef60a7d5d53979.ctex"
+uid="uid://c7kila4nnkcr5"
+path="res://.godot/imported/celula_madre.png-6e54d71313db95d077bcfa4fe49a642b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cards/comodins/contagio.png"
-dest_files=["res://.godot/imported/contagio.png-f074da323557fb64ceef60a7d5d53979.ctex"]
+source_file="res://assets/cards/tratamientos/celula_madre.png"
+dest_files=["res://.godot/imported/celula_madre.png-6e54d71313db95d077bcfa4fe49a642b.ctex"]
 
 [params]
 

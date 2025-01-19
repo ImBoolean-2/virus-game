@@ -3,13 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://doscd4ackdcnb" path="res://assets/backgrounds/game_board.svg" id="1_r677g"]
 [ext_resource type="Script" path="res://scripts/gameboard.gd" id="2_6pswn"]
 
-[node name="Node2D" type="Node2D"]
+[node name="game_board" type="Node2D"]
+script = ExtResource("2_6pswn")
 
 [node name="tablero" type="Sprite2D" parent="."]
 position = Vector2(575.25, 324.125)
 scale = Vector2(0.600781, 0.597917)
 texture = ExtResource("1_r677g")
-script = ExtResource("2_6pswn")
 
 [node name="Label" type="Label" parent="tablero"]
 auto_translate_mode = 1
@@ -27,4 +27,4 @@ offset_right = 1176.46
 offset_bottom = 34.5334
 text = "Music"
 
-[node name="card" type="Sprite2D" parent="."]
+[connection signal="ready" from="tablero" to="." method="_on_tablero_ready"]

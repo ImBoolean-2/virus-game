@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch0fliv7udyjp"
-path="res://.godot/imported/error_medico.png-ea5be85ba980c6bc87bc5e277dc35183.ctex"
+uid="uid://dft8bhac7hdm8"
+path="res://.godot/imported/transplante.png-1888109bc5b21a19f72c3e2e3d116057.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cards/comodins/error_medico.png"
-dest_files=["res://.godot/imported/error_medico.png-ea5be85ba980c6bc87bc5e277dc35183.ctex"]
+source_file="res://assets/cards/tratamientos/transplante.png"
+dest_files=["res://.godot/imported/transplante.png-1888109bc5b21a19f72c3e2e3d116057.ctex"]
 
 [params]
 

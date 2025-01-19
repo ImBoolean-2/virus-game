@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dft8bhac7hdm8"
-path="res://.godot/imported/transplante.png-98f456400a005f7246ff982d44623220.ctex"
+uid="uid://bfcxmmihbg5g5"
+path="res://.godot/imported/carta_volteada.png-c1f3ae2a4461a17671e890e9cf4e322c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cards/comodins/transplante.png"
-dest_files=["res://.godot/imported/transplante.png-98f456400a005f7246ff982d44623220.ctex"]
+source_file="res://assets/cards/carta_volteada.png"
+dest_files=["res://.godot/imported/carta_volteada.png-c1f3ae2a4461a17671e890e9cf4e322c.ctex"]
 
 [params]
 

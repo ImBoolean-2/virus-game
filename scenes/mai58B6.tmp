@@ -76,12 +76,8 @@ offset_bottom = -403.231
 text = "Musica"
 
 [node name="ConnectMenu" parent="." instance=ExtResource("3_dbema")]
-visible = false
 
 [node name="waiting_room" parent="." instance=ExtResource("5_18mby")]
-visible = false
 
-[connection signal="pressed" from="Background/MenuContainer/Menu/PhotoContainer/AssignPhoto" to="." method="_on_assign_photo_pressed"]
-[connection signal="pressed" from="Background/MenuContainer/Menu/NameContainer/AssignName" to="." method="_on_assign_name_pressed"]
 [connection signal="pressed" from="Background/MenuContainer/Menu/net/Host" to="." method="_on_host_pressed"]
 [connection signal="pressed" from="Background/MenuContainer/Menu/net/Connect" to="." method="_on_connect_pressed"]
