@@ -14,25 +14,20 @@ scale = Vector2(0.596354, 0.601852)
 texture = ExtResource("1_vqlsn")
 
 [node name="MenuContainer" type="CenterContainer" parent="Background"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 offset_left = -820.0
 offset_top = -349.0
-offset_right = 818.0
-offset_bottom = 455.0
+offset_right = -1102.0
+offset_bottom = -625.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Menu" type="VBoxContainer" parent="Background/MenuContainer"]
 layout_mode = 2
 
-[node name="PhotoContainer" type="HBoxContainer" parent="Background/MenuContainer/Menu"]
-layout_mode = 2
-
-[node name="PhotoFrame" type="TextureRect" parent="Background/MenuContainer/Menu/PhotoContainer"]
-layout_mode = 2
-
-[node name="AssignPhoto" type="Button" parent="Background/MenuContainer/Menu/PhotoContainer"]
-layout_mode = 2
-text = "Establecer foto de perfil"
-
-[node name="NameContainer" type="HBoxContainer" parent="Background/MenuContainer/Menu"]
+[node name="NameContainer" type="VBoxContainer" parent="Background/MenuContainer/Menu"]
 light_mask = 2
 layout_mode = 2
 alignment = 1
@@ -47,9 +42,20 @@ expand_to_text_length = true
 layout_mode = 2
 text = "Guarda Nombre"
 
-[node name="net" type="HBoxContainer" parent="Background/MenuContainer/Menu"]
+[node name="PhotoContainer" type="VBoxContainer" parent="Background/MenuContainer/Menu"]
+layout_mode = 2
+
+[node name="PhotoFrame" type="TextureRect" parent="Background/MenuContainer/Menu/PhotoContainer"]
+layout_mode = 2
+
+[node name="AssignPhoto" type="Button" parent="Background/MenuContainer/Menu/PhotoContainer"]
+layout_mode = 2
+text = "Establecer foto de perfil"
+
+[node name="net" type="VBoxContainer" parent="Background/MenuContainer/Menu"]
 z_index = 1
 layout_mode = 2
+size_flags_vertical = 3
 
 [node name="Host" type="Button" parent="Background/MenuContainer/Menu/net"]
 layout_mode = 2
@@ -58,7 +64,7 @@ text = "Host a party"
 
 [node name="Connect" type="Button" parent="Background/MenuContainer/Menu/net"]
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_vertical = 10
 text = "Join to LAN"
 
 [node name="player_name" type="Label" parent="Background"]
@@ -81,7 +87,7 @@ visible = false
 [node name="waiting_room" parent="." instance=ExtResource("5_18mby")]
 visible = false
 
-[connection signal="pressed" from="Background/MenuContainer/Menu/PhotoContainer/AssignPhoto" to="." method="_on_assign_photo_pressed"]
 [connection signal="pressed" from="Background/MenuContainer/Menu/NameContainer/AssignName" to="." method="_on_assign_name_pressed"]
+[connection signal="pressed" from="Background/MenuContainer/Menu/PhotoContainer/AssignPhoto" to="." method="_on_assign_photo_pressed"]
 [connection signal="pressed" from="Background/MenuContainer/Menu/net/Host" to="." method="_on_host_pressed"]
 [connection signal="pressed" from="Background/MenuContainer/Menu/net/Connect" to="." method="_on_connect_pressed"]

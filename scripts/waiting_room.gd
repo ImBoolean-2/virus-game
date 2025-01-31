@@ -75,3 +75,7 @@ func _on_peer_connected(peer_id: int) -> void:
 func _on_peer_disconnected(peer_id: int) -> void:
 	print("Jugador desconectado: %d" % peer_id)
 	_actualizar_lista_jugadores()
+	
+func _on_back_pressed() -> void:
+	print("Cambiando a main_menu")
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

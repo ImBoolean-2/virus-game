@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var host_list: HBoxContainer = $Background/HostList
+@onready var host_list: VBoxContainer = $Background/HostList
 @onready var back_button: Button = $Background/ButtonsContainer/Back
 @onready var connect_button: Button = $Background/ButtonsContainer/Connect
 
@@ -24,7 +24,7 @@ func _buscar_servidores() -> void:
 
 func _on_back_pressed() -> void:
 	print("Cambiando a main_menu")
-	get_tree().change_scene("res://scenes/main_menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 
 func _on_connect_pressed() -> void:
 	print("Conectando a un servidor...")

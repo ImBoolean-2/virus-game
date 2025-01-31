@@ -11,21 +11,26 @@ position = Vector2(576.25, 324.5)
 scale = Vector2(0.599739, 0.599074)
 texture = ExtResource("2_mttf0")
 
-[node name="HostList" type="HBoxContainer" parent="Background"]
-offset_left = -649.032
-offset_top = -296.29
-offset_right = -4.03192
-offset_bottom = 372.71
+[node name="HostList" type="VBoxContainer" parent="Background"]
+offset_left = -750.743
+offset_top = -294.621
+offset_right = 74.2568
+offset_bottom = 399.379
 
-[node name="ButtonsContainer" type="HBoxContainer" parent="Background"]
-offset_left = 106.296
-offset_top = -261.236
-offset_right = 685.296
-offset_bottom = -119.236
-alignment = 1
+[node name="ButtonsContainer" type="VBoxContainer" parent="Background"]
+offset_left = 244.69
+offset_top = -286.275
+offset_right = 594.69
+offset_bottom = -52.2751
 
 [node name="Back" type="Button" parent="Background/ButtonsContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Regresar al menu"
 
 [node name="Connect" type="Button" parent="Background/ButtonsContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+text = "Conectar"

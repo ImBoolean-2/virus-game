@@ -7,24 +7,22 @@
 script = ExtResource("1_jqovy")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(576.25, 324.5)
-scale = Vector2(0.599739, 0.599074)
+position = Vector2(576.375, 323.75)
+scale = Vector2(0.60039, 0.599537)
 texture = ExtResource("1_vidy3")
 
 [node name="PlayerList" type="VBoxContainer" parent="Background"]
 anchors_preset = -1
-anchor_left = 0.501
-anchor_top = 0.402
-anchor_right = 0.888
-anchor_bottom = 0.644
-offset_left = -960.67
-offset_top = -540.157
-offset_right = -959.71
-offset_bottom = -539.517
-grow_horizontal = 0
+anchor_left = 0.116
+anchor_top = 0.258
+anchor_right = 0.608
+anchor_bottom = 0.851
+offset_left = -965.72
+offset_top = -539.64
+offset_right = -959.36
+offset_bottom = -540.08
 grow_vertical = 2
 size_flags_horizontal = 4
-metadata/_edit_use_anchors_ = true
 
 [node name="Player1" type="HBoxContainer" parent="Background/PlayerList"]
 layout_mode = 2
@@ -84,3 +82,17 @@ layout_mode = 2
 
 [node name="PlayerName" type="Label" parent="Background/PlayerList/Player6"]
 layout_mode = 2
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="Background"]
+offset_left = 106.296
+offset_top = -261.236
+offset_right = 685.296
+offset_bottom = -119.236
+alignment = 1
+
+[node name="Back" type="Button" parent="Background/ButtonsContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Regresar al Menu"
+
+[connection signal="pressed" from="Background/ButtonsContainer/Back" to="." method="_on_back_pressed"]
