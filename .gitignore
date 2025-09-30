@@ -1,3 +1,13 @@
-# Godot 4+ specific ignores
+# Gradle
+.gradle
+build/
+jvm/
+
+# IDE files
+.idea/
+*.iml
+
+# Godot
 .godot/
-/android/
+export_presets.cfg
+export.cfg
